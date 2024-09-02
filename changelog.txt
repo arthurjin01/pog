@@ -67,3 +67,12 @@ v2.5.5
 - The bot will no longer recieve Feature Updates until further notice
 - Wish Simulator will continue recieving list updates
 - Bug fixes and improvements to existing features may still occur
+
+v2.5.6 
+- I've decided that feature updates can still continue, I'll just only make them if/when I want to
+- Added the 🅱️ command
+- Added Lyney, The First Great Magic, Neuvillette, and Lynette to the wish pool
+
+v2.5.7
+- Reworked how Genshin character card links are formed in wish.js, this may change again later
+- Added New 5-stars and 4-stars into wish pool

@@ -167,12 +167,25 @@ ex. \`pog she played phone AAA\` will return: \`She played on my phone until I A
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
                 }
+                else if (arguments.includes('b')) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog b\``)
+                    .setDescription(`This command takes every word in the rest of your message and replaces the first letter with 🅱️:
+"🅱️yka 🅱️lyat"
+
+Usage:
+\`pog b [message]\` where messsage gets the first letter of every word replaced with 🅱️.
+ex. \`pog b rin pen rose\` will return: \`"🅱️in 🅱️en 🅱️ose"\``)
+                    .setColor('#01796f')
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]})
+                }
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
 Troll Commands: \`start\`, \`butter\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`, \`b [message]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
