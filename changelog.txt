@@ -76,3 +76,14 @@ v2.5.6
 v2.5.7
 - Reworked how Genshin character card links are formed in wish.js, this may change again later
 - Added New 5-stars and 4-stars into wish pool
+
+v2.6
+- Increased file name character limit in exe command 
+- Updated help for exe command to indicate character limit 
+- Added Xianyun, Chiori, Chevreuse, Gaming, and weapons to wish simulator
+- Converted character cards to wish splash art in wish simulator
+- Added new Warp command for Honkai: Star Rail warp simulator
+- Updated all items in Warp simulator
+
+v2.6 Hotfix
+- Replaced Dan Heng IL warp image due to splash art URL issue

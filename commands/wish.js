@@ -6,55 +6,59 @@ module.exports = {
     const {MessageEmbed} = require('discord.js')
 
         const wikia = 'https://static.wikia.nocookie.net/gensin-impact/images/'
+        // The spelling error of 'Genshin' in the URL bothers me
 
         const primogem = wikia + 'd/d4/Item_Primogem.png'
 
-        const venticard = wikia + '4/4c/Venti_Card.png'
-        const childecard = wikia + '3/3c/Tartaglia_Card.png'
-        const kleecard = wikia + 'd/d2/Klee_Card.png'
-        const albedocard = wikia + '0/01/Albedo_Card.png'
-        const ganyucard = wikia + '2/24/Ganyu_Card.png'
-        const xiaocard = wikia + '7/7f/Xiao_Card.png'
-        const hutaocard = wikia + '8/88/Hu_Tao_Card.png'
-        const zhonglicard = wikia + '7/7b/Zhongli_Card.png'
-        const eulacard = wikia + '0/0e/Eula_Card.png'
-        const kazuhacard = wikia + '8/81/Kaedehara_Kazuha_Card.png'
-        const ayakacard = wikia + '0/01/Kamisato_Ayaka_Card.png'
-        const yoimiyacard = wikia + '3/36/Yoimiya_Card.png'
-        const keqingcard = wikia + '6/64/Keqing_Card.png'
-        const monacard = wikia + '9/9f/Mona_Card.png'
-        const diluccard = wikia + 'e/e7/Diluc_Card.png'
-        const jeancard = wikia + 'a/a8/Jean_Card.png'
-        const qiqicard = wikia + '0/03/Qiqi_Card.png'
-        const eicard = wikia + '6/60/Raiden_Shogun_Card.png'
-        const kokomicard = wikia + 'f/f4/Sangonomiya_Kokomi_Card.png'
-        const ittocard = wikia + '9/9d/Arataki_Itto_Card.png'
-        const shenhecard = wikia + '7/7f/Shenhe_Card.png'
-        const yaecard = wikia + '8/89/Yae_Miko_Card.png'
-        const ayatocard = wikia + '1/12/Kamisato_Ayato_Card.png'
-        const yelancard = wikia + 'f/fd/Yelan_Card.png'
-        const tighnaricard = wikia + '5/5c/Tighnari_Card.png'
-        const cynocard = wikia + '2/27/Cyno_Card.png'
-        const niloucard = wikia + '6/67/Nilou_Card.png'
-        const nahidacard = wikia + '4/4c/Nahida_Card.png'
-        const bbgcard = wikia + '8/8d/Wanderer_Card.png'
-        const alhaithamcard = wikia + '7/70/Alhaitham_Card.png'
-        const dehyacard = wikia + 'd/de/Dehya_Card.png'
-        const baizhucard = wikia + 'a/ae/Baizhu_Card.png'
-        const lyneycard = wikia + '8/86/Lyney_Card.png'
-        const neuvillettecard = wikia + '7/76/Neuvillette_Card.png'
-        const rizzcard = wikia + '9/94/Wriothesley_Card.png'
+        const venticard = wikia + '2/2d/Character_Venti_Full_Wish.png'
+        const childecard = wikia + 'a/af/Character_Tartaglia_Full_Wish.png'
+        const kleecard = wikia + '8/88/Character_Klee_Full_Wish.png'
+        const albedocard = wikia + '5/51/Character_Albedo_Full_Wish.png'
+        const ganyucard = wikia + '0/0e/Character_Ganyu_Full_Wish.png'
+        const xiaocard = wikia + '5/5d/Character_Xiao_Full_Wish.png'
+        const hutaocard = wikia + '5/59/Character_Hu_Tao_Full_Wish.png'
+        const zhonglicard = wikia + 'c/c4/Character_Zhongli_Full_Wish.png'
+        const eulacard = wikia + '6/6d/Character_Eula_Full_Wish.png'
+        const kazuhacard = wikia + '5/57/Character_Kaedehara_Kazuha_Full_Wish.png'
+        const ayatocard = wikia + 'c/ce/Character_Kamisato_Ayato_Full_Wish.png'
+        const yoimiyacard = wikia + '8/89/Character_Yoimiya_Full_Wish.png'
+        const keqingcard = wikia + 'b/be/Character_Keqing_Full_Wish.png'
+        const monacard = wikia + '0/0d/Character_Mona_Full_Wish.png'
+        const diluccard = wikia + '9/91/Character_Diluc_Full_Wish.png'
+        const jeancard = wikia + 'd/d6/Character_Jean_Full_Wish.png'
+        const qiqicard = wikia + 'f/fd/Character_Qiqi_Full_Wish.png'
+        const eicard = wikia + 'a/a3/Character_Raiden_Shogun_Full_Wish.png'
+        const kokomicard = wikia + '2/24/Character_Sangonomiya_Kokomi_Full_Wish.png'
+        const ittocard = wikia + 'c/c3/Character_Arataki_Itto_Full_Wish.png'
+        const shenhecard = wikia + '4/49/Character_Shenhe_Full_Wish.png'
+        const yaecard = wikia + '4/49/Character_Yae_Miko_Full_Wish.png'
+        const ayakacard = wikia + 'd/d0/Character_Kamisato_Ayaka_Full_Wish.png'
+        const yelancard = wikia + '2/23/Character_Yelan_Full_Wish.png'
+        const tighnaricard = wikia + 'c/ce/Character_Tighnari_Full_Wish.png'
+        const cyyucard = wikia + '5/55/Character_Cyno_Full_Wish.png'
+        const niloucard = wikia + '6/61/Character_Nilou_Full_Wish.png'
+        const nahidacard = wikia + 'd/dd/Character_Nahida_Full_Wish.png'
+        const bbgcard = wikia + 'd/de/Character_Wanderer_Full_Wish.png'
+        const alhaithamcard = wikia + 'e/e4/Character_Alhaitham_Full_Wish.png'
+        const dehyacard = wikia + '3/35/Character_Dehya_Full_Wish.png'
+        const baizhucard = wikia + '2/2e/Character_Baizhu_Full_Wish.png'
+        const lyneycard = wikia + 'a/a3/Character_Lyney_Full_Wish.png'
+        const neuvillettecard = wikia + '5/5e/Character_Neuvillette_Full_Wish.png'
+        const rizzcard = wikia + '5/50/Character_Wriothesley_Full_Wish.png'
         const focalorscard = wikia + '9/94/Character_Furina_Full_Wish.png'
-        const naviacard = wikia + '0/09/Navia_Card.png'
+        const naviacard = wikia + 'c/c8/Character_Navia_Full_Wish.png'
+        const xianyuncard = wikia + '0/0b/Character_Xianyun_Full_Wish.png'
+        const chioricard = wikia + '6/62/Chiori_Card.png'
 
         var color = '#191a36'
-        const anemo = '#4cc285'
-        const geo = '#ecc60d'
-        const pyro = '#da5d31'
-        const hydro = '#569cd0'
-        const cryo = '#b4dcde'
-        const electro = '#965daa'
-        const dendro = '#9bc800'
+        var element = primogem
+        const anemo = ['#4cc285', wikia + '1/10/Element_Anemo.svg']
+        const geo = ['#ecc60d', wikia + '9/9b/Element_Geo.svg']
+        const pyro = ['#da5d31', wikia + '2/2c/Element_Pyro.svg']
+        const hydro = ['#569cd0', wikia + '8/80/Element_Hydro.svg']
+        const cryo = ['#b4dcde', wikia + '7/72/Element_Cryo.svg']
+        const electro = ['#965daa', wikia + 'f/ff/Element_Electro.svg']
+        const dendro = ['#9bc800', wikia + '7/73/Element_Dendro.svg']
 
         const venti = ['Venti', venticard, anemo]
         const childe = ['Tartaglia', childecard, hydro]
@@ -81,7 +85,7 @@ module.exports = {
         const ayato = ['Kamisato Ayato', ayatocard, hydro]
         const yelan = ['Yelan', yelancard, hydro]
         const tighnari = ['Tighnari', tighnaricard, dendro]
-        const cyno = ['Cyno', cynocard, electro]
+        const cyyu = ['Cyno', cyyucard, electro]
         const nilou = ['Nilou', niloucard, hydro]
         const nahida = ['Nahida', nahidacard, dendro]
         const babygirl = ['The Wanderer', bbgcard, anemo]
@@ -89,17 +93,19 @@ module.exports = {
         const dehya = ['Dehya', dehyacard, pyro]
         const baizhu = ['Baizhu', baizhucard, dendro]
         const lyney = ['Lyney', lyneycard, pyro]
-        const neuvillette = ['Neuvillette', 'https://tenor.com/hHgF3DVWmT.gif', hydro]
+        const neuvillette = ['Neuvillette', 'https://media1.tenor.com/m/AWpVVkfaRg0AAAAC/oratrice-oratrice-mecanique-d%27analyse-cardinale.gif', hydro]
         const rizzlybear = ['Wriothesley', rizzcard, cryo]
         const focalors = ['Furina', focalorscard, hydro]
         const navia = ['Navia', naviacard, geo]
+        const xianyun = ['Xianyun', wikia + '4/46/NPC_Cloud_Retainer.png', anemo]
+        const chiori = ['Chiori', chioricard, geo]
 
 
         const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
             eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc, jean, ei, 
-            kokomi, itto, shenhe, yae, ayato, yelan, tighnari, cyno, nilou, nahida, 
+            kokomi, itto, shenhe, yae, ayato, yelan, tighnari, cyyu, nilou, nahida, 
             babygirl, alhaitham, dehya, baizhu, lyney, neuvillette, rizzlybear, 
-            focalors, navia, // 5-star characters
+            focalors, navia, xianyun, chiori, // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
@@ -110,14 +116,14 @@ module.exports = {
             'Aqua Simulacra', 'The Hunter\'s Path', 'Staff of the Scarlet Sands', 'Key of Khaj-Nisut',
             'A Thousand Floating Dreams', 'Alaya', 'Light of Foliar Incision', 'Beacon of the Reed Sea', 
             'Jadefall\'s Splendor', 'The First Great Magic', 'Tome of the Eternal Flow',
-            'Splendor of Tranquil Waters' // 5-star weapons
+            'Splendor of Tranquil Waters', 'Verdict', 'Crane\'s Echoing Call', 'Uraku Misugiri' // 5-star weapons
         ] 
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
             'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', 
             'Collei', 'Dori', 'Layla', 'Faruzan', 'Yaoyao', 'Kaveh', 'Candace', 'Kirara', 'Lynette',
-            'Freminet', 'Charlotte', // 4-star characters
+            'Freminet', 'Charlotte', 'Chevreuse', 'Gaming', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
@@ -132,7 +138,7 @@ module.exports = {
             'Blackcliff Pole', 'Wavebreaker\'s Fin', 'Royal Spear', 'The Black Sword', 'The Alley Flash',
             'Sword of Descension', 'Royal Longsword', 'Prototype Rancour', 'Amenoma Kageuchi', 
             'Iron Sting', 'Festering Desire', 'Cinnebar Spindle', 'Blackcliff Sword',
-            'Sword of Narzissenkreuz'
+            'Sword of Narzissenkreuz', 'Ultimate Overlord\'s Mega Magic Sword'
         ] // 4-star weapons
 
         const star3 = ['Slingshot', 'Sharpshooter\'s Oath', 'Raven Bow', 'Emerald Orb', 
@@ -140,7 +146,7 @@ module.exports = {
             'Bloodstained Greatsword', 'Ferrous Shadow', 'Skyrider Sword', 'Harbringer of Dawn', 
             'Cool Steel'] // List of 3-star weapons
 
-        const footer = 'Official art from Genshin Fandom Wiki'
+        const footer = 'Official art from Genshin Impact Fandom Wiki'
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -169,8 +175,8 @@ module.exports = {
                 .setTitle(goldstar)
                 .setDescription(char[0])
                 .setImage(char[1])
-                .setColor(char[2])
-                .setThumbnail(primogem)
+                .setColor(char[2][0])
+                .setThumbnail(char[2][1])
                 .setTimestamp()
                 .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
@@ -203,7 +209,8 @@ module.exports = {
             else {
                 item = `${goldstar} ${char[0]}`
                 charimage = char[1]
-                color = char[2]
+                color = char[2][0]
+                element = char[2][1]
             }
             star5pity = 0
         }
@@ -312,7 +319,7 @@ ${items[7]}
 ${items[8]}
 ${items[9]}`)
                     .setImage(charimage)
-                    .setThumbnail(primogem)
+                    .setThumbnail(element)
                     .setColor(color)
                     .setTimestamp()
                     .setFooter({ text: footer})
@@ -335,7 +342,7 @@ ${items[9]}`)
                         .setColor(color)
                         .setThumbnail('https://th.bing.com/th/id/OIP.leQ4vnoL-ZyYJwY5IlEpxAHaGA?pid=ImgDet&rs=1')
                         .setTimestamp()
-                        .setFooter('lmao noob')
+                        .setFooter('skill issue')
                         receivedMessage.reply({ embeds: [embed]})
                         star4pity += 1
                         star5pity += 1

@@ -54,6 +54,7 @@ const server = require('./commands/server')
 const rng = require('./commands/rng')
 const she = require('./commands/she') 
 const b = require('./commands/b')
+const warp = require('./commands/warp')
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -265,6 +266,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (b.checkB(receivedMessage)) { // pog b
+        return
+    }
+    else if (warp.checkWarp(receivedMessage)) { // pog warp
         return
     }
     // else if (dm.checkDm(receivedMessage)) { // pog dm

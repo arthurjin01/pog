@@ -6,34 +6,29 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let filename = receivedMessage.content.substr(8)
 
-    //
-    // WORD FILTER LIST
-    // !!! 
-    // filter = ['fuck', 'shit', 'ass', 'retard', 'stupid', 'idiot', 'cum']
-
-
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog exe'
             case 'exe' :
-                if (receivedMessage.content.length < 14) {
+                if (filename.length < 21) {
 
-                    // if (receivedMessage.includes(filter)) {
-                    //     // haha L
-                    // }
-                    // else {
-                        const embed = new MessageEmbed()
-                        .setTitle(filename + '.exe')
-                        .setDescription('sussy baka!')
-                        .setThumbnail('https://aux2.iconspalace.com/uploads/448592549.png')
-                        .setURL('https://bit.ly/3h872Sg')
-                        .setTimestamp()
-                        receivedMessage.reply({ embeds: [embed]}) // send arguments with '.exe' at the end of it
-                    // }
+                    const embed = new MessageEmbed()
+                    .setTitle(filename + '.exe')
+                    .setDescription('sussy baka!')
+                    .setThumbnail('https://aux2.iconspalace.com/uploads/448592549.png')
+                    .setURL('https://bit.ly/3h872Sg')
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]}) // send arguments with '.exe' at the end of it
 
                 }
                 else {
-                    null
+                    const embed = new MessageEmbed()
+                    .setTitle('Explorer.exe')
+                    .setDescription('The file name is too long.')
+                    .setThumbnail('http://www.rw-designer.com/icon-view/17086.png')
+                    .setURL('https://bit.ly/3h872Sg')
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]})
                 }
         }
         // value of 'found' will be returned in bot.js

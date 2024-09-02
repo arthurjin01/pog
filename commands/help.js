@@ -16,7 +16,8 @@ module.exports = {
                     .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
 
 Usage: \`pog exe [any text]\`
-ex. \`pog exe virus\` → returns \`virus.exe\` in an embedded message.`)
+ex. \`pog exe virus\` → returns \`virus.exe\` in an embedded message.
+Maximum 12 characters in the filename.`)
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
@@ -50,6 +51,19 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
 Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
 
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)
+Note: The Pity system is shared, so other users running the command at the same time can "steal your pity".`)
+                    .setColor(color)
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]})
+                }
+                else if (arguments.includes('wrap')) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog wish\``)
+                    .setDescription(`A Honkai: Star Rail warp simulation command.
+
+Notice: The command only accepts single warps or 10-warps, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
+
+Usage: \`pog warp\` (to do one wish); \`pog warp 10\` (to do a 10-pull wish)
 Note: The Pity system is shared, so other users running the command at the same time can "steal your pity".`)
                     .setColor(color)
                     .setTimestamp()
@@ -185,7 +199,7 @@ ex. \`pog b rin pen rose\` will return: \`"🅱️in 🅱️en 🅱️ose"\``)
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
 Troll Commands: \`start\`, \`butter\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`, \`b [message]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`warp [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`, \`b [message]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
