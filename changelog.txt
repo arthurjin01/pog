@@ -87,3 +87,11 @@ v2.6
 
 v2.6 Hotfix
 - Replaced Dan Heng IL warp image due to splash art URL issue
+
+v2.6.1
+- Fixed an issue where 'I'm dad' reply can ping everyone
+- Added Arlecchino, Clorinde, Sethos, Sigewinne, Emilie, Kachina, Mualani, and weapons to wish simulator
+- Added Acheron, Aventurine, Gallagher, Boothill, Robin, Firefly, Jade, Jiaoqiu, Yunli, Feixiao, and Moze to warp simulator
+- Addition of light cones to HSR warp simulator is depreciated and no new light cones will be added until further notice
+- Changed wish/warp illustration disclaimer to better reflect easter egg illustrations/animations
+- *Accidentally pushed changes to depreciated branch: 'npm_update'*

@@ -33,6 +33,18 @@ module.exports = {
         const ruanmeisplash = wikia + 'd/d5/Character_Ruan_Mei_Splash_Art.png'
         const blackswansplash = wikia + 'f/fd/Character_Black_Swan_Splash_Art.png'
         const hutaosplash = wikia + '9/99/Character_Sparkle_Splash_Art.png'
+        const acheronsplash = wikia + '/7/78/Character_Acheron_Splash_Art.png'
+        const aventurinesplash = wikia + '/a/a9/Character_Aventurine_Splash_Art.png'
+        const boothillsplash = wikia + '/b/bb/Character_Boothill_Splash_Art.png'
+        const robinsplash = wikia + '/9/92/Character_Robin_Splash_Art.png'
+        const fireflysplash = wikia + '/3/38/Character_Firefly_Splash_Art.png'
+        const jadesplash = wikia + '/6/6d/Character_Jade_Splash_Art.png'
+        const jiaoqiusplash = wikia + '/b/be/Character_Jiaoqiu_Splash_Art.png'
+        const yunlisplash = wikia + '/7/72/Character_Yunli_Splash_Art.png'
+        const feixiaosplash = wikia + '/6/61/Character_Feixiao_Splash_Art.png'
+        const lingshasplash = wikia + '/c/c1/Character_Lingsha_Splash_Art.png'
+        const morisplash = wikia + '/1/1c/Character_Rappa_Splash_Art.png'
+        const sundaysplash = wikia + '/5/5b/NPC_Sunday.png' // fix when released
 
 
         var color = '#191a36'
@@ -55,6 +67,8 @@ module.exports = {
         const abundance = wikia + '9/94/Path_Abundance.png'
         const destruction = wikia + 'd/df/Path_Destruction.png'
         const harmony = wikia + '7/7e/Path_Harmony.png'
+
+        const iwillhaveorder = wikia + '/0/0c/Path_Order.png'
 
 
         const himeko = ['Himeko', himekosplash, pyro, erudition]
@@ -80,11 +94,25 @@ module.exports = {
         const ruanmei = ['Ruan Mei', ruanmeisplash, cryo, harmony]
         const blackswan = ['Black Swan', blackswansplash, anemo, nihility]
         const hutao = ['Sparkle', hutaosplash, quantum, harmony]
+        const acheron = ['Acheron', acheronsplash, electro, nihility]
+        const aventurine = ['Aventurine', aventurinesplash, geo, preservation]
+        const boothill = ['Boothill', boothillsplash, physical, thehunt]
+        const robin = ['Robin', robinsplash, physical, harmony]
+        const firefly = ['Firefly', fireflysplash, pyro, destruction]
+        const jade = ['Jade', jadesplash, quantum, erudition]
+        const jiaoqiu = ['Jiaoqiu', jiaoqiusplash, pyro, nihility]
+        const yunli = ['Yunli', yunlisplash, physical, destruction]
+        const feixiao = ['Feixiao', feixiaosplash, anemo, thehunt]
+        const lingsha = ['Lingsha', lingshasplash, pyro, abundance]
+        const moricalliope = ['Rappa', morisplash, geo, erudition]
+        const sunday = ['Sunday', sundaysplash, color, iwillhaveorder] // fix when released
 
 
         const star5 = [himeko, gepard, yanqing, welt, qiqi, svarog, bronya, cyyu,
             seele, luocha, silverwolf, blade, kafka, danheng, qiqi, fuxuan, scuff,
-            topaz, argenti, huohuo, L, ruanmei, blackswan, hutao, // 5-star characters
+            topaz, argenti, huohuo, L, ruanmei, blackswan, hutao, acheron, aventurine,
+            boothill, robin, firefly, jade, jiaoqiu, yunli, feixiao, lingsha, 
+            moricalliope, sunday, // 5-star characters
             'Before Dawn', 'But the Battle Isn\'t Over', 'Cruising in the Stellar Sea', 
             'In the Name of the World', 'In the Night', 'Moment of Victory', 'Night on the Milky Way', 
             'On the Fall of an Aeon', 'Sleep Like the Dead', 'Something Irreplaceable',
@@ -93,12 +121,12 @@ module.exports = {
             'She Already Shut Her Eyes', 'Solitary Healing', 'I Shall Be My Own Sword',
             'Worrisome, Blissful', 'Night of Fright', 'An Instant Before A Gaze',
             'Past Self in Mirror', 'Baptism of Pure Thought', 'Reforged Remembrance',
-            'Earthly Escapade' // 5-star weapons
+            'Earthly Escapade',  // 5-star light cones (depreciated)
         ] 
 
         const star4 = ['Arlan', 'Asta', 'Dan Heng', 'Herta', 'Hook', 'March 7th', 'Natasha', 
             'Pela', 'Qingque', 'Sampo', 'Serval', 'Sushang', 'Tingyun', 'Yukong', 'Luka', 'Lynx',
-            'Guinaifen', 'Hanya', 'Xueyi', 'Mischa', // 4-star characters
+            'Guinaifen', 'Hanya', 'Xueyi', 'Mischa', 'Gallagher', 'Moze', // 4-star characters
             'A Secret Vow', 'Carve the Moon, Weave the Clouds', 
             'Dance! Dance! Dance!', 'Day One of My New Life', 'Eyes of the Prey', 'Fermata', 
             'Geniuses\' Repose', 'Good Night and Sleep Well', 'Landu\'s Choice', 'Make the World Clamor',
@@ -111,14 +139,14 @@ module.exports = {
             'Woof! Walk Time!', 'Before the Tutorial Mission Starts', 'Hey, Over Here', 'Indelible Promise',
             'What Is Real?', 'Dreamville Adventure', 'Final Victor', 'Flames Afar', 'Destiny\'s Threads Forewoven',
             'The Day The Cosmos Fell', 'It\'s Showtime'
-        ] // 4-star weapons
+        ] // 4-star light cones (depreciated)
 
         const star3 = ['Adversarial', 'Amber', 'Arrows', 'Chorus', 'Collapsing Sky', 'Cornucopia', 
             'Darting Arrow', 'Data Bank', 'Defense', 'Fine Fruit', 'Hidden Shadow', 'Loop', 
             'Meditation', 'Meshing Cogs', 'Multiplication', 'Mutual Demise','Passkey', 'Pioneering', 
-            'Sagacity', 'Shattered Home', 'Void'] // List of 3-star weapons
+            'Sagacity', 'Shattered Home', 'Void'] // List of 3-star light cones
 
-        const footer = 'Official art from Honkai: Star Rail Fandom Wiki'
+        const footer = 'Illustrations from Honkai: Star Rail Fandom Wiki'
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]

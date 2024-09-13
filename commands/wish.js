@@ -48,7 +48,13 @@ module.exports = {
         const focalorscard = wikia + '9/94/Character_Furina_Full_Wish.png'
         const naviacard = wikia + 'c/c8/Character_Navia_Full_Wish.png'
         const xianyuncard = wikia + '0/0b/Character_Xianyun_Full_Wish.png'
-        const chioricard = wikia + '6/62/Chiori_Card.png'
+        const chioricard = wikia + '/a/a0/Character_Chiori_Full_Wish.png'
+        const dadcard = wikia + '/f/f8/Character_Arlecchino_Full_Wish.png'
+        const clorindecard = wikia + '/8/87/Character_Clorinde_Full_Wish.png'
+        const sigewinnecard = wikia + '/a/a9/Character_Sigewinne_Full_Wish.png'
+        const emiliecard = wikia + '/c/c8/Character_Emilie_Full_Wish.png'
+        const mualanicard = wikia + '/a/a4/Character_Mualani_Full_Wish.png'
+        const kinichcard = wikia + '/e/e7/Character_Kinich_Game.png' // fix when banner releases
 
         var color = '#191a36'
         var element = primogem
@@ -99,13 +105,20 @@ module.exports = {
         const navia = ['Navia', naviacard, geo]
         const xianyun = ['Xianyun', wikia + '4/46/NPC_Cloud_Retainer.png', anemo]
         const chiori = ['Chiori', chioricard, geo]
+        const dad = ['Arlecchino', dadcard, pyro]
+        const clorinde = ['Clorinde', clorindecard, electro]
+        const sigewinne = ['Sigewinne', sigewinnecard, hydro]
+        const emilie = ['Emilie', emiliecard, dendro]
+        const mualani = ['Mualani', mualanicard, hydro]
+        const kinich = ['Kinich', kinichcard, dendro]
 
 
         const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
             eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc, jean, ei, 
             kokomi, itto, shenhe, yae, ayato, yelan, tighnari, cyyu, nilou, nahida, 
             babygirl, alhaitham, dehya, baizhu, lyney, neuvillette, rizzlybear, 
-            focalors, navia, xianyun, chiori, // 5-star characters
+            focalors, navia, xianyun, chiori, dad, clorinde, sigewinne, emilie, 
+            mualani, kinich, // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
@@ -116,14 +129,16 @@ module.exports = {
             'Aqua Simulacra', 'The Hunter\'s Path', 'Staff of the Scarlet Sands', 'Key of Khaj-Nisut',
             'A Thousand Floating Dreams', 'Alaya', 'Light of Foliar Incision', 'Beacon of the Reed Sea', 
             'Jadefall\'s Splendor', 'The First Great Magic', 'Tome of the Eternal Flow',
-            'Splendor of Tranquil Waters', 'Verdict', 'Crane\'s Echoing Call', 'Uraku Misugiri' // 5-star weapons
+            'Splendor of Tranquil Waters', 'Verdict', 'Crane\'s Echoing Call', 'Uraku Misugiri',
+            'Crimson Moon\'s Semblance', 'Absolution', 'Silvershower Heartstrings', 'Lumidouce Elegy',
+            'Surf\'s Up' // 5-star weapons
         ] 
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
             'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', 
             'Collei', 'Dori', 'Layla', 'Faruzan', 'Yaoyao', 'Kaveh', 'Candace', 'Kirara', 'Lynette',
-            'Freminet', 'Charlotte', 'Chevreuse', 'Gaming', // 4-star characters
+            'Freminet', 'Charlotte', 'Chevreuse', 'Gaming', 'Sethos', 'Kachina', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
@@ -146,7 +161,7 @@ module.exports = {
             'Bloodstained Greatsword', 'Ferrous Shadow', 'Skyrider Sword', 'Harbringer of Dawn', 
             'Cool Steel'] // List of 3-star weapons
 
-        const footer = 'Official art from Genshin Impact Fandom Wiki'
+        const footer = 'Illustrations from Genshin Impact Fandom Wiki'
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
