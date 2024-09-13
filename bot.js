@@ -172,7 +172,7 @@ client.on('messageCreate', receivedMessage => {
                 })
     } 
     if (lowered.startsWith(dad.im) && (receivedMessage.content.length < 14)) { // dad
-        var name = receivedMessage.content.substr(3)
+        var name = receivedMessage.content.substr(3).replace('@', '')
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
     else {
